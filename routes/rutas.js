@@ -18,7 +18,7 @@ rutas.get('/api/v1/habitaciones/', function (req, res) {
   })
 
 //3. Servicio buscar por ID
-rutas.get('/api/v1/habitaciones/', function (req, res) {
+rutas.get('/api/v1/habitaciones/id/', function (req, res) {
     res.send('Hello World')
   })
 
@@ -38,3 +38,19 @@ rutas.get('/api/v1/habitaciones/', function (req, res) {
 rutas.post('/api/v1/habitaciones/reserva/', function (req, res) {
     res.send('Hello World')
   })
+
+//2. Servicios buscar ReservaId
+rutas.get('/api/v1/habitaciones/reserva/', function (req, res) {
+    res.send('Hello World')
+  })
+
+//3.Servicios Editar reserva
+rutas.put('/api/v1/habitaciones/reserva/', function (req, res) {
+    res.send('Hello World')
+  })
+
+//4. Servicios eliminar reserva
+rutas.delete('/api/v1/habitaciones/reserva/', function (req, res) {
+    res.send('Hello World')
+  })
+
