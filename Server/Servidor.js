@@ -12,6 +12,7 @@ export class Servidor{
     constructor(){
 
         this.app = express()
+        this.llamarAuxiliares()
         this.atenderServicios()
     }
 
@@ -26,6 +27,11 @@ export class Servidor{
     }
 
     conectarconBD(){}
+
+    llamarAuxiliares(){
+        //Activo la recepción de datos por el body de la peticion
+        this.app.use(express.json)
+    }
 }
 
    
